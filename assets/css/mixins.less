@@ -1,0 +1,209 @@
+/* ------------------------------------------ BRAND COLORS ------------------------------------------ */
+
+@brand_blue: #025481;
+	@brand_blue-lite: #4981A9;
+	@brand_blue-dark: #03334D;
+
+@brand_yellow: #DBB427;
+	@brand_yellow-lite: #F4C222;
+	@brand_yellow-dark: #8F8231;
+
+@brand_green: #608038;
+	@brand_green-lite: #629D42;
+	@brand_green-dark: #365226;
+	
+@brand_red: #A93A29;
+	@brand_red-lite: #DA4127;
+	@brand_red-dark: #7D2A18;
+	
+@brand_teal: #5BB3B2;
+	@brand_teal-lite: #78CCC5;
+	@brand_teal-dark: #438583;
+
+@brand_gray-1: #A8B9BA;
+@brand_gray-2: #92A1A3;
+@brand_gray-3: #7A8687;
+@brand_gray-4: #343939;
+
+@light-gray-border: #D7DFCD;
+
+@black: #000;
+@gray: #ddd;
+@white: #fff;
+@placeholder: #EBEBEB;
+
+@error: #f04646;
+
+@base-size: 16;
+ 
+.font-size(@sizeValue) {
+@remValue: (@sizeValue/@base-size);
+@pxValue: @sizeValue;
+font-size: ~"@{pxValue}px"; 
+font-size: ~"@{remValue}rem";
+}
+
+.line-height(@sizeValue) {
+@remValue: (@sizeValue/@base-size);
+@pxValue: @sizeValue;
+line-height: ~"@{pxValue}px"; 
+line-height: ~"@{remValue}rem";
+}
+
+.text-outline(@color: #000){
+	text-shadow:
+   -1px -1px 0 @color,  
+    1px -1px 0 @color,
+    -1px 1px 0 @color,
+     1px 1px 0 @color;
+}
+
+.pointer-events(@value) {
+-ms-pointer-events: @value;
+pointer-events: @value;
+}
+
+.transall(@speed:250ms){
+-webkit-transition: all @speed ease-in-out;
+-moz-transition: all @speed ease-in-out;
+-ms-transition: all @speed ease-in-out;
+-o-transition: all @speed ease-in-out;
+transition: all @speed ease-in-out;
+}
+
+.image_grayscale() {  
+filter: url(filters.svg#grayscale); /* Firefox 3.5+ */  
+filter: gray; /* IE6-9 */  
+-webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */  
+}
+
+.materialShadow(@level: 1){
+    & when (@level = 1) {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    & when (@level = 2) {
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 3) {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    }
+    & when (@level = 4) {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    & when (@level = 5) {
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    }
+}
+
+/* ------------------------------------------ THE TRIANGLE TAIL ------------------------------------------ */
+/* ------------------------------------------ THE TRIANGLE TAIL ------------------------------------------ */
+
+.triangle-bottom(@color:red) {
+position:relative;
+  	
+  	&:after {
+	border-width:30px 40px 0;
+	border-style:solid;
+	border-color:@color transparent;
+	bottom:-80px;
+	content:"";
+	display:block;
+	left:50%;
+	margin-left: -40px;
+	margin-top: 0;
+	position:absolute;
+	right: auto;
+	top: auto;
+	width:0;
+	z-index: 10;
+	}
+	
+}
+
+.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = top) {
+position:relative;
+  	
+  	&:after {
+	border-width:0 @xSize @ySize; /* vary these values to change the angle of the vertex */
+	border-style:solid;
+	border-color:@color transparent;
+	bottom:auto;
+	content:"";
+	display:block;
+	left:auto;
+	margin-right: -@xSize;
+	margin-top: auto;
+	position:absolute;
+	right:50%;
+	top:-@ySize; /* value = - border-top-width - border-bottom-width */
+	width:0;
+	z-index: 10;
+	}
+	
+}
+
+.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = right) {
+position:relative;
+  	
+  	&:after {
+	border-width:@ySize 0 @ySize @xSize;
+	border-style:solid;
+	border-color:transparent @color;
+	bottom:auto;
+	content:"";
+	display:block;
+	left:auto;
+	margin-left: auto;
+	margin-top: -@ySize;
+	position:absolute;
+	right:-@xSize; /* value = - border-left-width - border-right-width */
+	top:50%; /* controls vertical position */
+	width:0;
+	z-index: 10;
+	}
+	
+}
+
+.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = left) {
+position:relative;
+  	
+  	&:after {
+	border-width:@ySize @xSize @ySize 0;
+	border-style:solid;
+	border-color:transparent @color;
+	bottom:auto;
+	content:"";
+	display:block;
+	left:-@xSize;
+	margin-left: 0;
+	margin-top: -@xSize;
+	position:absolute;
+	right:auto; /* value = - border-left-width - border-right-width */
+	top:50%; /* controls vertical position */
+	width:0;
+	z-index: 10;
+	}
+	
+}
+
+.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = bottom) {
+position:relative;
+  	
+  	&:after {
+	border-width:@ySize @xSize 0; /* vary these values to change the angle of the vertex */
+	border-style:solid;
+	border-color:@color transparent;
+	bottom:-@xSize; /* value = - border-top-width - border-bottom-width */
+	content:"";
+	display:block;
+	left:50%; /* controls horizontal position */
+	margin-left: -@ySize;
+	margin-top: 0;
+	position:absolute;
+	right: auto;
+	top: auto;
+	width:0;
+	z-index: 10;
+	}
+	
+}
