@@ -1,24 +1,5 @@
 /* ------------------------------------------ BRAND COLORS ------------------------------------------ */
-
-@brand_blue: #025481;
-	@brand_blue-lite: #4981A9;
-	@brand_blue-dark: #03334D;
-
-@brand_yellow: #DBB427;
-	@brand_yellow-lite: #F4C222;
-	@brand_yellow-dark: #8F8231;
-
-@brand_green: #608038;
-	@brand_green-lite: #629D42;
-	@brand_green-dark: #365226;
-	
-@brand_red: #A93A29;
-	@brand_red-lite: #DA4127;
-	@brand_red-dark: #7D2A18;
-	
-@brand_teal: #5BB3B2;
-	@brand_teal-lite: #78CCC5;
-	@brand_teal-dark: #438583;
+/* ------------------------------------------ BRAND COLORS ------------------------------------------ */
 
 @brand_gray-1: #A8B9BA;
 @brand_gray-2: #92A1A3;
@@ -35,6 +16,9 @@
 @error: #f04646;
 
 @base-size: 16;
+
+/* ------------------------------------------ FONT MIXINS ------------------------------------------ */
+/* ------------------------------------------ FONT MIXINS ------------------------------------------ */
  
 .font-size(@sizeValue) {
 @remValue: (@sizeValue/@base-size);
@@ -58,24 +42,36 @@ line-height: ~"@{remValue}rem";
      1px 1px 0 @color;
 }
 
+/* ------------------------------------------ POINTER EVENTS ------------------------------------------ */
+/* ------------------------------------------ POINTER EVENTS ------------------------------------------ */
+
 .pointer-events(@value) {
 -ms-pointer-events: @value;
 pointer-events: @value;
 }
 
-.transall(@speed:250ms){
--webkit-transition: all @speed ease-in-out;
--moz-transition: all @speed ease-in-out;
--ms-transition: all @speed ease-in-out;
--o-transition: all @speed ease-in-out;
-transition: all @speed ease-in-out;
+/* ------------------------------------------ TRANSITION MIXIN ------------------------------------------ */
+/* ------------------------------------------ TRANSITION MIXIN ------------------------------------------ */
+
+.transall(@target:all,@speed:250ms,@easing:ease-in-out){
+-webkit-transition: @target @speed @easing;
+-moz-transition: @target @speed @easing;
+-ms-transition: @target @speed @easing;
+-o-transition: @target @speed @easing;
+transition: @target @speed @easing;
 }
+
+/* ------------------------------------------ GRAYSCALE AN IMAGE ------------------------------------------ */
+/* ------------------------------------------ GRAYSCALE AN IMAGE ------------------------------------------ */
 
 .image_grayscale() {  
 filter: url(filters.svg#grayscale); /* Firefox 3.5+ */  
 filter: gray; /* IE6-9 */  
 -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */  
 }
+
+/* ------------------------------------------ MATERIAL DROP SHADOW ------------------------------------------ */
+/* ------------------------------------------ MATERIAL DROP SHADOW ------------------------------------------ */
 
 .materialShadow(@level: 1){
     & when (@level = 1) {
@@ -95,115 +91,79 @@ filter: gray; /* IE6-9 */
     }
 }
 
-/* ------------------------------------------ THE TRIANGLE TAIL ------------------------------------------ */
-/* ------------------------------------------ THE TRIANGLE TAIL ------------------------------------------ */
+/* ------------------------------------------ SPEECH BUBBLE TRIANGLE TAIL ------------------------------------------ */
+/* ------------------------------------------ SPEECH BUBBLE TRIANGLE TAIL ------------------------------------------ */
 
-.triangle-bottom(@color:red) {
+.triangle(@position:bottom,@color:#CCC,@ySize:15px,@xSize:15px) {
+border-style:solid;
+content:"";
+display:block;
 position:relative;
-  	
-  	&:after {
-	border-width:30px 40px 0;
-	border-style:solid;
-	border-color:@color transparent;
-	bottom:-80px;
-	content:"";
-	display:block;
-	left:50%;
-	margin-left: -40px;
-	margin-top: 0;
-	position:absolute;
-	right: auto;
-	top: auto;
-	width:0;
-	z-index: 10;
+width:0;
+z-index: 10;
+
+	& when (@position = top) {
+	  	
+	  	&:after {
+		border-width:0 @xSize @ySize; /* vary these values to change the angle of the vertex */
+		border-color:@color transparent;
+		bottom:auto;
+		left:auto;
+		margin-right: -@xSize;
+		margin-top: auto;
+		position:absolute;
+		right:50%;
+		top:-@ySize; /* value = - border-top-width - border-bottom-width */
+		}
+		
 	}
 	
-}
-
-.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = top) {
-position:relative;
+	& when (@position = right) {
   	
-  	&:after {
-	border-width:0 @xSize @ySize; /* vary these values to change the angle of the vertex */
-	border-style:solid;
-	border-color:@color transparent;
-	bottom:auto;
-	content:"";
-	display:block;
-	left:auto;
-	margin-right: -@xSize;
-	margin-top: auto;
-	position:absolute;
-	right:50%;
-	top:-@ySize; /* value = - border-top-width - border-bottom-width */
-	width:0;
-	z-index: 10;
+	  	&:after {
+		border-width:@ySize 0 @ySize @xSize;
+		border-color:transparent @color;
+		bottom:auto;
+		left:auto;
+		margin-left: auto;
+		margin-top: -@ySize;
+		position:absolute;
+		right:-@xSize; /* value = - border-left-width - border-right-width */
+		top:50%; /* controls vertical position */
+		}
+		
 	}
 	
-}
-
-.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = right) {
-position:relative;
+	& when (@position = left) {
   	
-  	&:after {
-	border-width:@ySize 0 @ySize @xSize;
-	border-style:solid;
-	border-color:transparent @color;
-	bottom:auto;
-	content:"";
-	display:block;
-	left:auto;
-	margin-left: auto;
-	margin-top: -@ySize;
-	position:absolute;
-	right:-@xSize; /* value = - border-left-width - border-right-width */
-	top:50%; /* controls vertical position */
-	width:0;
-	z-index: 10;
+	  	&:after {
+		border-width:@ySize @xSize @ySize 0;
+		border-color:transparent @color;
+		bottom:auto;
+		left:-@xSize;
+		margin-left: 0;
+		margin-top: -@xSize;
+		position:absolute;
+		right:auto; /* value = - border-left-width - border-right-width */
+		top:50%; /* controls vertical position */
+		}
+		
 	}
 	
-}
-
-.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = left) {
-position:relative;
+	& when (@position = bottom) {
   	
-  	&:after {
-	border-width:@ySize @xSize @ySize 0;
-	border-style:solid;
-	border-color:transparent @color;
-	bottom:auto;
-	content:"";
-	display:block;
-	left:-@xSize;
-	margin-left: 0;
-	margin-top: -@xSize;
-	position:absolute;
-	right:auto; /* value = - border-left-width - border-right-width */
-	top:50%; /* controls vertical position */
-	width:0;
-	z-index: 10;
+	  	&:after {
+		border-width:@ySize @xSize 0; /* vary these values to change the angle of the vertex */
+		border-color:@color transparent;
+		bottom:-@xSize; /* value = - border-top-width - border-bottom-width */
+		left:50%; /* controls horizontal position */
+		margin-left: -@ySize;
+		margin-top: 0;
+		position:absolute;
+		right: auto;
+		top: auto;
+		}
+		
 	}
-	
-}
 
-.triangle(@position:bottom,@color:red,@ySize:15px,@xSize:15px) when (@position = bottom) {
-position:relative;
-  	
-  	&:after {
-	border-width:@ySize @xSize 0; /* vary these values to change the angle of the vertex */
-	border-style:solid;
-	border-color:@color transparent;
-	bottom:-@xSize; /* value = - border-top-width - border-bottom-width */
-	content:"";
-	display:block;
-	left:50%; /* controls horizontal position */
-	margin-left: -@ySize;
-	margin-top: 0;
-	position:absolute;
-	right: auto;
-	top: auto;
-	width:0;
-	z-index: 10;
-	}
-	
 }
