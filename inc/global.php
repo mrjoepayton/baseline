@@ -3,11 +3,16 @@
 //SHOW ALL PHP ERRORS
 error_reporting(E_ALL & ~E_NOTICE);
 
-// SET BASE PATHS
+// -------------------------- SET GLOBAL VARS -------------------------------//
+// -------------------------- SET GLOBAL VARS -------------------------------//
+
 $baseURL = "http://".$_SERVER['HTTP_HOST']."/";
 $baseDIR = $_SERVER['DOCUMENT_ROOT'];
+$verDate = "?ver=120116";
 
-//CONNECT TO REMOTE DATABASE
+// -------------------------- CONNECT TO REMOTE DATABASE -------------------------------//
+// -------------------------- CONNECT TO REMOTE DATABASE -------------------------------//
+
 //require($_SERVER['DOCUMENT_ROOT'].'/inc/medoo.php');
 
 //$database = new medoo([
@@ -21,6 +26,7 @@ $baseDIR = $_SERVER['DOCUMENT_ROOT'];
 
 // -------------------------- GET THE CLIENT'S IP ADDRESS -------------------------------//
 // -------------------------- GET THE CLIENT'S IP ADDRESS -------------------------------//
+
 function get_client_ip() {
 	
 	if (getenv("HTTP_CLIENT_IP") && strcasecmp(getenv("HTTP_CLIENT_IP"), "unknown")) {

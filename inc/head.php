@@ -1,5 +1,3 @@
-<?php $verDate = "?ver=120116"; ?>
-
 <!DOCTYPE html>
 
 <html lang="en">
@@ -14,7 +12,7 @@
 		<base href="<?php echo($baseURL); ?>">
 		
 		<!-- Modernizr -->
-		<script src="<?php echo($baseURL); ?>assets/js/libs/modernizr-custom.js<?php echo($verDate); ?>"></script>
+		<script src="<?php echo($baseURL); ?>assets/js/libs/modernizr.js<?php echo($verDate); ?>"></script>
 		
 		<link href="<?php echo($baseURL); ?>assets/css/style.css<?php echo($verDate); ?>" rel="stylesheet">
 		<link href="<?php echo($currentURL); ?>" rel="canonical" />

@@ -1,7 +1,6 @@
 <?php
 	
 include($_SERVER['DOCUMENT_ROOT'].'/inc/global.php');
-include($_SERVER['DOCUMENT_ROOT'].'/inc/modernizr-server.php');
 
 $pageTitle = "this is the page title";
 $pageDescription = "This is where you would type your page description";

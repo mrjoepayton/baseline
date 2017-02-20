@@ -17,18 +17,17 @@ module.exports = function (grunt) {
 			js: {
 				files: {
 					'assets/js/plugins.js': [
-						'assets/js/libs/jquery-3.0.0.min.js',
+						'assets/js/libs/jquery.3.0.0.min.js',
 						'assets/js/libs/bootstrap.js',
-						'assets/js/libs/gsap.tweenmax-1.19.0.js',
-						'assets/js/libs/gsap.morph-0.8.1.js',
+						'assets/js/libs/gsap.tweenmax.js',
+						'assets/js/libs/gsap.morph.js',
+						'assets/js/libs/gsap.draggable.js',
 						'assets/js/libs/jquery.equalheights.js',
+						'assets/js/libs/jquery.resizeend.js',
 						'assets/js/libs/jquery.velocity.js',
 						'assets/js/libs/jquery.waypoints.js',
 						'assets/js/libs/jquery.cookies.js',
 						'assets/js/libs/jquery.history.js'
-					],
-					'assets/js/scripts.js': [
-						'assets/js/main.js'
 					]
 				}
 			}
