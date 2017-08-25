@@ -1,0 +1,835 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"next",
+				"nextBtnLeft"
+			],
+			[
+				"marg",
+				"margin-left: "
+			],
+			[
+				"brand",
+				"brand_blue-dark"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"tex",
+				"text-align: "
+			],
+			[
+				"margin",
+				"margin-top: "
+			],
+			[
+				"brand_yell",
+				"brand_yellow-lite"
+			],
+			[
+				"lig",
+				"lighten\tSass-function"
+			],
+			[
+				"user",
+				"user-subject"
+			],
+			[
+				"back",
+				"background-color: "
+			],
+			[
+				"text",
+				"text-transform: "
+			],
+			[
+				"padding",
+				"padding: "
+			],
+			[
+				"mar",
+				"margin: "
+			],
+			[
+				"padd",
+				"padding: "
+			],
+			[
+				"font",
+				"font-weight: "
+			],
+			[
+				"border",
+				"border-bottom: "
+			],
+			[
+				"col",
+				"col-sm-10"
+			],
+			[
+				"grid",
+				"grid__col-10"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"pan",
+				"panel-4"
+			],
+			[
+				"pane",
+				"panel-3"
+			],
+			[
+				"panel",
+				"panel-1"
+			],
+			[
+				"flex",
+				"flex-grow"
+			],
+			[
+				"list",
+				"list-style-image"
+			],
+			[
+				"hero",
+				"heroVids_height"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"exhi",
+				"exhibit-link"
+			],
+			[
+				"trans",
+				"transall"
+			],
+			[
+				"author",
+				"authorImg"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"empty",
+				"emptyOverlay"
+			],
+			[
+				"overlay",
+				"overlayContent"
+			],
+			[
+				"target",
+				"targetOverlay"
+			],
+			[
+				"fo",
+				"for\tAttr"
+			],
+			[
+				"usersc",
+				"usersc"
+			],
+			[
+				"new",
+				"newListType"
+			],
+			[
+				"newLi",
+				"newListName"
+			],
+			[
+				"edit",
+				"edit-list-form"
+			],
+			[
+				"t",
+				"type\tAttr"
+			],
+			[
+				"font-",
+				"font-condensed"
+			],
+			[
+				"tumb",
+				"tumbleweed"
+			],
+			[
+				"scale",
+				"scaleX"
+			],
+			[
+				"action",
+				"action-label"
+			],
+			[
+				"col-",
+				"col-md-8"
+			],
+			[
+				"div",
+				"div"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"item",
+				"itemType"
+			],
+			[
+				"op",
+				"option\tTag"
+			],
+			[
+				"lis",
+				"listInfo"
+			],
+			[
+				"targ",
+				"targOverlay"
+			],
+			[
+				"out",
+				"outline"
+			],
+			[
+				"ele",
+				"elemObj"
+			],
+			[
+				"rg",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"elem",
+				"elemType"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-size"
+			],
+			[
+				"brand_",
+				"brand_green-lite"
+			],
+			[
+				"doc",
+				"docBody"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"brand_gra",
+				"brand_gray-1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 107.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"settings",
+				"Preferences: Package Control Settings – User"
+			],
+			[
+				"syntax",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"synt",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"",
+				"Grunt"
+			],
+			[
+				"sanit",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"scr",
+				"Scratch Pad"
+			],
+			[
+				"pac",
+				"Package Control: Discover Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inat",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: scr",
+				"Package Control: Discover Packages"
+			],
+			[
+				"Pac",
+				"Preferences: Browse Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Colorsublime: Browse Themes"
+			],
+			[
+				"PAC",
+				"Package Control: Install Package"
+			],
+			[
+				"grun",
+				"Grunt"
+			],
+			[
+				"gr",
+				"Grunt"
+			],
+			[
+				"grunt",
+				"Grunt"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"grut",
+				"Grunt: Kill Running Tasks"
+			],
+			[
+				"less",
+				"Set Syntax: LESS"
+			],
+			[
+				"packages",
+				"Preferences: Browse Packages"
+			],
+			[
+				"ftp",
+				"Preferences: Package Control Settings – Default"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 266.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"grunt",
+			"npm install",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
+			"grunt"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/joepayton/Projects/GIT Repos/baseline",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc"
+	],
+	"file_history":
+	[
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/global.php",
+		"/Users/joepayton/Projects/GIT Repos/baseline/inc/medoo.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/jquery.debounce.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/jquery.equalheights.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/about/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/estimation-calc.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/contact-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/black/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/subscribe-form.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/blog-sidebar.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/application.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/package.json",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/work-functions.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/global.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blended-learning/index.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/footer.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/people-grid.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/about.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/media-queries.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/scripts.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/screen.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/mixins.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/main-nav.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/header.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/social.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/screen.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/mixins.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/updates.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/media-queries.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/typography.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/print.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/lightcase.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/animations.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/jquery.events.touch.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/bootstrap.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/grid-helpers.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/lesshat.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/swiper.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/bootstrap-slider.scss",
+		"/Users/joepayton/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/libs/popper.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/libs/bootstrap.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/grid-helpers.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css/compile.scss",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/compile.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/index-OLD-USE-IT-FOR-SCRAP.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/blended-learning/circles.svg",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/reflex/mixins.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/head.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/global.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/polyfills/pointer_events_polyfill.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/plugins/debounce.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog/post.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work/work-sample.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/show-person.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/icons/chevron-right.svg",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/bootstrap.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/global.less",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/browser-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/support.css",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/white-paper.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/download-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/work.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/templates/download-email-external.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/templates/download-email-internal.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/download-form.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/.gitignore",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/.htaccess",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/download-email.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/js/libs/modernizr-custom.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/blog-category.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/blog-tags.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/blog-search.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/blog-views/blog-article.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/empty-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/get_author.php",
+		"/Users/joepayton/Library/Application Support/Sublime Text 3/scratchpad.txt",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/download/cloud.svg",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/css/mixins.less",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/message.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/forgot_password.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/_blank_pages/userspice_blank.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/helpers/data-functions.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/forms/edit-list.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/forms/delete-list.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/includes/admin-header.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/admin_page.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/includes/admin-navigation.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/admin_pages.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/admin.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/account.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/users/includes/admin-navigation.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/users/includes/navigation.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/ajax/load-edit-form.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/includes/header.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/includes/edit-overlay.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/z_us_root.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/img/tumbleweed.svg",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/index.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/css/compile.less",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/css/flexboxgrid.less",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/ajax/load-edit-form.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/img/icons/cancel.svg",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/includes/page_footer.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/gruntfile.js",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/js/libs/bootstrap.js",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/.gitignore",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/package.json",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/js/libs/jquery-3.0.0.min.js",
+		"/Users/joepayton/Library/Application Support/Sublime Text 3/Packages/User/SublimeGrunt.sublime-settings",
+		"/Users/joepayton/Library/Application Support/Sublime Text 3/Packages/Grunt/SublimeGrunt.sublime-settings",
+		"/Users/joepayton/Desktop/grunt-config.json",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/views/_edit_lists_form.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/js/libs/respond.min.js",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/js/libs/jquery.equalheights.js",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/js/libs/modernizr-custom.js",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc/list.php",
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/js/main.js",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/add-member-to-list.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/process-form.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/ajax/contact-form.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/inc/browser.php",
+		"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/img/icons/cancel.svg"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/css",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less/reflex",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com/assets/less",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com,-*.min.js,-*.min.css",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com,-*.min.js,,-*.min.css",
+			"/Users/joepayton/Projects/GIT Repos/obsidianlearning.com",
+			"/Users/joepayton/Projects/GIT Repos/giftwrangler.com",
+			"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/usersc",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"calc-next",
+			"checkmark",
+			"arrow-down.svg",
+			"estimate",
+			"slider",
+			"class=\"slider",
+			"overlay-link",
+			"class=\"overlay-link\"",
+			"About",
+			"estimat",
+			"Modernizr",
+			"resize",
+			"resize(function()",
+			"courseLengthSlider",
+			"flex-wrap",
+			"hp_content",
+			"estimation-hero",
+			"estimation",
+			".hero-panel",
+			"estimation",
+			"hp_content",
+			".home",
+			"\t\th3 {\n\t\t\t@include font(lato);\n\t\t\tfont-weight: 700;\n\t\t\tmargin: 0;\n\t\t    padding: 10px 0 25px;\n\t\t\t}\n\t\t\t\t\n\t\t\t.radio-btn {\n\t\t\tbackground-color: #ebebeb;\n\t\t\tborder: 1px solid $white;\n\t\t\tcursor: pointer;\n\t\t\tdisplay: inline-block;\n\t\t\t@include font(lato);\n\t\t\tfont-weight: 700;\n\t\t\tmargin-right: 20px;\n\t\t\tpadding: 5px 10px;\n\t\t\tposition: relative;\n\t\t\t@include transall();\n\t\t\t\n\t\t\t\t.check {\n\t\t\t\tbackground-color: lighten($brand_green-lite,50%);\n\t\t\t\tdisplay: block;\n\t\t\t\theight: 32px;\n\t\t\t\tleft: 0;\n\t\t\t\toverflow: hidden;\n\t\t\t\tposition: absolute;\n\t\t\t\ttop: 0;\n\t\t\t\twidth: 0;\n\t\t\t\t\t\n\t\t\t\t\t.checkmark {\n\t\t\t\t\theight: 20px;\n\t\t\t\t\tmargin: 5px;\n\t\t\t\t\topacity: 0;\n\t\t\t\t\t@include transform(scale(3) rotate(90deg));\n\t\t\t\t\twidth: 20px;\n\t\t\t\t\t@include transall();\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t&:hover {\n\t\t\t\tbackground-color: lighten($brand_green-lite,50%);\n\t\t\t\tborder: 1px solid $brand_green-lite;\n\t\t\t\t@include transall();\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t&.selected {\n\t\t\t\tbackground-color: $brand_green-lite;\n\t\t\t\tborder: 1px solid $brand_green-lite;\n\t\t\t\tcolor: $white;\n\t\t\t\tpadding-left: 42px;\n\t\t\t\t@include transall();\n\t\t\t\t\t\n\t\t\t\t\t.check {\n\t\t\t\t\twidth: 32px;\n\t\t\t\t\t@include transall();\n\t\t\t\t\t\t\n\t\t\t\t\t\t.checkmark {\n\t\t\t\t\t\topacity: 1;\n\t\t\t\t\t\t@include transform(scale(1) rotate(0deg));\n\t\t\t\t\t\t@include transall();\n\t\t\t\t\t\t}\n\t\t\t\t\t\t\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}\n\n\t\t\t#slider-wrapper {\n\t\t\tpadding: 0px 20px 20px;\n\t\t\t\n\t\t\t\t#clock {\n\t\t\t\t\t\n\t\t\t\t\timg {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t\theight: auto;\n\t\t\t\t\twidth: 100%;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\n\t\t\t\t#timer {\n\t\t\t\t@include font(condensed);\n\t\t\t\tfont-weight: 700;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.slider {\n\t\t\t\t\t\n\t\t\t\t\t&.slider-horizontal {\n\t\t\t\t\twidth: 50%;\n\t\t\t\t\t\n\t\t\t\t\t\t.slider-track {\n\t\t\t\t\t\tbackground-color: #EBEBEB;\n\t\t\t\t\t\tbackground-image: none;\n\t\t\t\t\t\tborder-radius: 0;\n\t\t\t\t\t\tbox-shadow: none;\n\t\t\t\t\t\theight: 25px;\n\t\t\t\t\t\tmargin-top: 0;\n\t\t\t\t\t\ttop: 0;\n\t\t\t\t\t\t\n\t\t\t\t\t\t\t.slider-selection {\n\t\t\t\t\t\t\tbackground-color: $brand_blue;\n\t\t\t\t\t\t\tbackground-image: none;\n\t\t\t\t\t\t\tborder-radius: 0;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\n\t\t\t\t\t\t}\n\t\t\t\t\t\t\n\t\t\t\t\t\t.slider-handle {\n\t\t\t\t\t\tbackground: linear-gradient(to bottom, #599ccc 0%,#4981a9 100%);\n\t\t\t\t\t\tborder-radius: 0;\n\t\t\t\t\t\theight: 25px;\n\t\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}\n\t\t\t\n\t\t\t.calc-next {\n\t\t\tbackground: none;\n\t\t\tborder: none;\n\t\t\theight: 50px;\n\t\t\tposition: absolute;\n\t\t\tmargin-top: -25px;\n\t\t\toutline: none;\n\t\t\tright: 25px;\n\t\t\ttop: 50%;\n\t\t\twidth: 52px;\n\t\t\t\t\n\t\t\t\tsvg {\n\t\t\t\tdisplay: block;\n\t\t\t\theight: 45px;\n\t\t\t\twidth: 52px;\n\t\t\t\t\t\n\t\t\t\t\t.fill-white {\n\t\t\t\t\tfill:$brand_green-lite;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t&.disabled {\n\t\t\t\tcursor: not-allowed;\n\t\t\t\t\n\t\t\t\t\t.fill-white {\n\t\t\t\t\tfill:$brand_gray-1;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}\n\t\t\t\n\t\t\t&#finished {\n\t\t\ttext-align: center;\n\t\t\t\t\n\t\t\t\th3 {\n\t\t\t\tpadding-bottom: 10px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t#total-box {\n\t\t\t\tbackground-color: #ebebeb;\n\t\t\t\tcolor: $brand_green-lite;\n\t\t\t\t@include font(serif);\n\t\t\t\t@include font-size(36);\n\t\t\t\tfont-weight: 700;\n\t\t\t\tmargin-bottom: 20px;\n\t\t\t\tpadding: 10px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.show-contact {\n\t\t\t\tbackground-color: $brand_green-lite;\n\t\t\t\tcolor: $white;\n\t\t\t\tdisplay: inline-block;\n\t\t\t\t@include font(condensed);\n\t\t\t\tfont-weight: 700;\n\t\t\t\t@include font-size(24);\n\t\t\t\tpadding: 5px 15px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t}",
+			"svg",
+			"estimation",
+			"blog-article",
+			"estimate-overlay",
+			".live-cost",
+			"history",
+			"estimat",
+			"estimation",
+			"contact-overlay",
+			"#close_contact",
+			"close_contact",
+			"box-shadow",
+			"sidebar-panel",
+			"date",
+			"blog-panels",
+			"how-it-works",
+			"why-obsidian-learning",
+			"about",
+			"partners",
+			"philosophy",
+			"partner",
+			"main-footer",
+			");\n",
+			"content-wrap",
+			"about",
+			"why-item",
+			"why-obsidian-learning",
+			"#why-obsidian-learning",
+			"#why-obsidian",
+			"hadclass",
+			"homeHeroVid",
+			"overlay",
+			"/estimation/",
+			"estimation",
+			"homeHeroVid",
+			"video",
+			"estimation",
+			"estimate-calc",
+			"calc-launch",
+			"homeHeroVid",
+			"video",
+			"calc-launch",
+			"showOverlay",
+			"calc-launch",
+			"child-panel",
+			"align",
+			"panel-link",
+			"row",
+			"main-nav",
+			"@extend .font-mono",
+			"@extend .font-lato",
+			"@extend .font-serif",
+			"@extend .font-sans",
+			"@extend .font-condensed",
+			"@extend .font-",
+			"extend",
+			"@include flex-grow",
+			"@include display",
+			"@include",
+			"transform",
+			"@include transform(scale(",
+			"@include transform(",
+			"@include transition(",
+			"translate",
+			"grid-centered",
+			"flex-grow",
+			"clearfix",
+			".clearfix",
+			".display(flex)",
+			".appearance(",
+			"));\n",
+			"1",
+			".scale(",
+			".transform(",
+			"line-height(",
+			".line-height(",
+			".clearFix(",
+			".background-image(",
+			".border-radius(",
+			".box-shadow(",
+			".font-size(",
+			".font-mono",
+			".font-lato",
+			".font-serif",
+			".font-condensed",
+			".materialShadow(",
+			"materialShadow(",
+			".rotate",
+			".transall(",
+			"transall(",
+			".font-sans",
+			"$-ms",
+			"$media",
+			"less",
+			"@",
+			"blog-panels",
+			"search-form",
+			"sear",
+			"blog-panels",
+			"search-form",
+			"blogPage",
+			"#blog",
+			"blog",
+			"children",
+			"hero"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"@include font(mono)",
+			"@include font(lato)",
+			"@include font(serif)",
+			"@include font(sans)",
+			"@include font(condensed)",
+			"@include transform(",
+			"@include line-height(",
+			"@include clearFix(",
+			"@include font-size(",
+			"@extend .font-lato",
+			"@extend .font-serif",
+			"@extend .font-condensed",
+			"@include materialShadow(",
+			"@include transall(",
+			"$font-sans",
+			"@-ms",
+			"@media",
+			"$"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "baseline.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 701.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 316.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
