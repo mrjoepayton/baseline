@@ -15,6 +15,12 @@ $bodyClass = "home";
 <?php include($_SERVER['DOCUMENT_ROOT'].'/inc/head.php'); ?>
 <?php include($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
 
-	<h2>content</h2>
+<section class="main-content">
+
+	<div class="container">
+		<h2>content</h2>
+	</div>
+
+</section>
 
 <?php include($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>

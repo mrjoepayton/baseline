@@ -4,32 +4,72 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		
 		pkg: grunt.file.readJSON('package.json'),
+
+		modernizr: {
+			dist: {
+				"crawl": false,
+				"customTests": [],
+				"dest" : "assets/js/libs/modernizr-custom.js",
+				"tests": [
+					"audio",
+					"cookies",
+					"flash",
+					"history",
+					"json",
+					"svg",
+					"touchevents",
+					"video",
+					"cssanimations",
+					"flexbox",
+					"mediaqueries",
+					"rgba",
+					"formvalidation",
+					"inlinesvg",
+					"videoautoplay"
+				],
+				"options": [
+					"html5shiv",
+				    "setClasses"
+				],
+				"uglify": true
+			}
+		},
 		
-		less: {
-			default: {
+		copy: {
+			main: {
+				src: 'node_modules/webfontloader/webfontloader.js',
+				dest: 'assets/js/libs/webfontloader.js',
+			},
+		},
+
+		sass: {
+			dist: {
+				
+				options: {
+				sourceMap: false,
+				},
+
 				files: {
-					'assets/css/style.css': 'assets/css/compile.less'
+				'assets/css/style.css': 'assets/sass/compile.scss'
 				}
 			}
 		},
 
 		concat: {
-			js: {
-				files: {
-					'assets/js/plugins.js': [
-						'assets/js/libs/jquery.3.0.0.min.js',
-						'assets/js/libs/bootstrap.js',
-						'assets/js/libs/gsap.tweenmax.js',
-						'assets/js/libs/gsap.morph.js',
-						'assets/js/libs/gsap.draggable.js',
-						'assets/js/libs/jquery.equalheights.js',
-						'assets/js/libs/jquery.resizeend.js',
-						'assets/js/libs/jquery.velocity.js',
-						'assets/js/libs/jquery.waypoints.js',
-						'assets/js/libs/jquery.cookies.js',
-						'assets/js/libs/jquery.history.js'
-					]
-				}
+			options: {
+				stripBanners:true
+			},
+			dist: {
+				src: [
+					'node_modules/jquery/dist/jquery.js',
+					'node_modules/gsap/TweenMax.js',
+					'node_modules/waypoints/lib/jquery.waypoints.js',
+					'node_modules/jquery-match-height/jquery.matchHeight.js',
+					'node_modules/js-cookie/src/js.cookie.js',
+					'node_modules/history.js/history.js',
+					'node_modules/resize-end/src/resize-end.js'
+				],
+				dest:'assets/js/plugins.js',
 			}
 		},
 		
@@ -43,25 +83,28 @@ module.exports = function (grunt) {
 		},
 		
 		cssmin: {
+			options: {
+				specialComments:0
+			},
 			target: {
 				files: [{
 					expand: true,
-					cwd: '',
-					src: ['assets/css/style.css'],
-					dest: '',
+					cwd: 'assets/css',
+					src: ['*.css', '!*.min.css'],
+					dest: 'assets/css',
 					ext: '.min.css'
 				}]
 			}
 		},
 		
 		watch: {
-			less: {
-				files: ['assets/**/*.less'],
-				tasks: ['buildcss', 'minifycss'],
+			sass: {
+				files: ['assets/**/*.scss'],
+				tasks: ['slimcss'],
 			},
 			js: {
 				files: ['assets/**/*.js', '!assets/**/*.min.js'],
-				tasks: [ 'buildjs','uglyjs'],
+				tasks: [ 'slimjs'],
 			}
 			
 		},
@@ -82,18 +125,23 @@ module.exports = function (grunt) {
 		
 	});
 
-	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-contrib-less');
+	// Load tasks
+	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks("grunt-modernizr");
+	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-notify');
 
-	// Default task(s).
-	grunt.registerTask('default', ['buildcss', 'minifycss', 'buildjs', 'uglyjs']);
-	grunt.registerTask('buildcss', ['less', 'notify:buildcss']);
-	grunt.registerTask('minifycss', ['cssmin']);
-	grunt.registerTask('buildjs', ['concat', 'notify:buildjs']);
-	grunt.registerTask('uglyjs', ['uglify']);
+	// Register tasks
+	grunt.registerTask('default', ['copy', 'modernizr', 'buildcss', 'buildjs']);
+
+	grunt.registerTask('buildcss', ['sass', 'cssmin']);
+	grunt.registerTask('slimcss', ['sass', 'notify:buildcss']);
+
+	grunt.registerTask('buildjs', ['concat', 'uglify']);
+	grunt.registerTask('slimjs', ['uglify', 'notify:buildjs']);
 
 };
