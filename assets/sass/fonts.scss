@@ -1,12 +1,14 @@
 /* BASE WEB FONTS */
-.font-sans {
-font-family: 'Open Sans', sans-serif;
-}
+@mixin font($value: sans) {
 
-.font-serif {
-font-family: 'Merriweather', serif;
-}
+	@if $value == "sans" {
+		font-family: 'Open Sans', sans-serif;
+	} @else if $value == "serif" {
+		font-family: 'Merriweather', serif;
+	} @else if $value == "condensed" {
+		font-family: 'Open Sans Condensed', sans-serif;
+	} @else if $value == "mono" {
+		font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace
+	} 
 
-.font-condensed {
-font-family: 'Open Sans Condensed', sans-serif;
 }
