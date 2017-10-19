@@ -1,4 +1,4 @@
-#Baseline Package
+# Baseline Package
 ---
 build language: **PHP**
 
@@ -10,7 +10,7 @@ build language: **PHP**
 
 Task Runners: **NODE.JS** and **GRUNT**
 
-###Grunt tasks:
+### Grunt tasks:
  - grunt-sass
  - grunt-contrib-concat
  - grunt-contrib-cssmin
@@ -21,7 +21,7 @@ Task Runners: **NODE.JS** and **GRUNT**
  - grunt-modernizr
 
 -------
-###JS Libraries
+### JS Libraries
  - jQuery
  - Modernizr
  - popper.js
@@ -34,7 +34,7 @@ Task Runners: **NODE.JS** and **GRUNT**
  - resize-end
 
 -------
-###Modernizr Setup
+### Modernizr Setup
 modernizr is built and copied using the modernizer grunt task which can be generated on the [modernizr website](https://modernizr.com/download?setclasses)
 
 Current uglified modernizr build includes [html5shiv](https://github.com/aFarkas/html5shiv/) and the following tests:
@@ -56,5 +56,5 @@ Current uglified modernizr build includes [html5shiv](https://github.com/aFarkas
  - videoautoplay
 
 -------
-###Google fonts
+### Google fonts
 loaded via [webfontloader.js](https://github.com/typekit/webfontloader)
