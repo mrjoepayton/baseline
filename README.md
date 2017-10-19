@@ -1,6 +1,7 @@
 # Baseline Package
+
 ---
-build language: **PHP**
+Build language: **PHP**
 
  - Medoo Database Library ([detail](http://medoo.in))
  
@@ -10,6 +11,7 @@ build language: **PHP**
 
 Task Runners: **NODE.JS** and **GRUNT**
 
+---
 ### Grunt tasks:
  - grunt-sass
  - grunt-contrib-concat
@@ -20,7 +22,7 @@ Task Runners: **NODE.JS** and **GRUNT**
  - grunt-notify
  - grunt-modernizr
 
--------
+---
 ### JS Libraries
  - jQuery
  - Modernizr
