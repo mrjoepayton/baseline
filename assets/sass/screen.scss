@@ -1,9 +1,9 @@
 html,body {
-background-color: #999;
 height: 100%;
 }
 
 body {
-@extend .font-sans;
+background-color: #999;
+@include font(sans);
 overflow: auto;
 }

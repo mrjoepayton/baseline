@@ -93,40 +93,6 @@
 		outline: none;
 	}
 
-/* -------------------- FONT SIZE -------------------- */
-/* -------------------- FONT SIZE -------------------- */
-
-	@mixin font-size($sizeValue) {
-		$remValue: ($sizeValue/$base-size);
-		$pxValue: $sizeValue;
-		font-size: $pxValue + px; 
-		font-size: $remValue + rem;
-	}
-
-/* -------------------- LINE HEIGHTS -------------------- */
-/* -------------------- LINE HEIGHTS -------------------- */
-
-	@mixin line-height($sizeValue) {
-		$remValue: ($sizeValue/$base-size);
-		$pxValue: $sizeValue;
-		line-height: $pxValue + px; 
-		line-height: $remValue + rem;
-	}
-
-/* -------------------- STOKE TEXT -------------------- */
-/* -------------------- STOKE TEXT -------------------- */
-
-	@mixin stroke($width, $color) {
-		$shadow: ();
-		@for $i from -$width through $width {
-			$shadow: append($shadow,#{$width}px #{$i}px $color, comma);
-			$shadow: append($shadow,#{-$width}px #{$i}px $color, comma);
-			$shadow: append($shadow,#{$i}px #{$width}px $color, comma);
-			$shadow: append($shadow,#{$i}px #{-$width}px $color, comma);
-		}
-		text-shadow: $shadow;
-	}
-
 /* -------------------- POINTER EVENTS -------------------- */
 /* -------------------- POINTER EVENTS -------------------- */
 
