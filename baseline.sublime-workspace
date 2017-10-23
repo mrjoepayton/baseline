@@ -285,11 +285,26 @@
 			}
 		},
 		{
-			"file": "README.md",
+			"file": "assets/sass/screen.scss",
 			"settings":
 			{
-				"buffer_size": 1228,
-				"encoding": "UTF-8",
+				"buffer_size": 98,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/sass/mixins.scss",
+			"settings":
+			{
+				"buffer_size": 7931,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "assets/sass/fonts.scss",
+			"settings":
+			{
+				"buffer_size": 1746,
 				"line_ending": "Unix"
 			}
 		},
@@ -462,11 +477,13 @@
 	],
 	"file_history":
 	[
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/branding.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/fonts.scss",
+		"/Users/joepayton/Projects/GIT Repos/baseline/README.md",
 		"/Users/joepayton/Projects/GIT Repos/baseline/package.json",
 		"/Users/joepayton/Projects/GIT Repos/baseline/gruntfile.js",
 		"/Users/joepayton/Projects/GIT Repos/baseline/Vagrantfile",
 		"/Users/joepayton/Projects/GIT Repos/baseline/inc/head.php",
-		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/fonts.scss",
 		"/Users/joepayton/Projects/GIT Repos/baseline/inc/header.php",
 		"/Users/joepayton/Projects/GIT Repos/baseline/inc/footer.php",
 		"/Users/joepayton/Projects/GIT Repos/baseline/assets/js/plugins.js",
@@ -478,7 +495,6 @@
 		"/Users/joepayton/Projects/GIT Repos/baseline/node_modules/jquery/dist/jquery.js",
 		"/Users/joepayton/Projects/GIT Repos/baseline/assets/js/libs/modernizr-custom.js",
 		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/compile.scss",
-		"/Users/joepayton/Projects/GIT Repos/baseline/assets/sass/branding.scss",
 		"/Users/joepayton/Projects/GIT Repos/baseline/assets/css/compile.scss",
 		"/Users/joepayton/Projects/GIT Repos/baseline/assets/css/fonts.scss",
 		"/Users/joepayton/Projects/GIT Repos/baseline/node_modules/bootstrap/Gruntfile.js",
@@ -588,8 +604,7 @@
 		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/img/tumbleweed.svg",
 		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/index.php",
 		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/css/compile.less",
-		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/css/flexboxgrid.less",
-		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/ajax/load-edit-form.php"
+		"/Users/joepayton/Projects/GIT Repos/giftwrangler.com/assets/css/flexboxgrid.less"
 	],
 	"find":
 	{
@@ -619,6 +634,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".font",
 			"@",
 			"calc-next",
 			"checkmark",
@@ -745,8 +761,7 @@
 			"search-form",
 			"blogPage",
 			"#blog",
-			"blog",
-			"children"
+			"blog"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -783,7 +798,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -816,24 +831,53 @@
 				},
 				{
 					"buffer": 1,
-					"file": "README.md",
+					"file": "assets/sass/screen.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1228,
+						"buffer_size": 98,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21,
-								21
+								59,
+								59
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "assets/sass/mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7931,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2151,
+								2151
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -843,7 +887,35 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
+					"file": "assets/sass/fonts.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								144,
+								144
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Syntax Highlighting for Sass/Syntaxes/SCSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
 					"file": "package.json",
 					"semi_transient": false,
 					"settings":
@@ -868,11 +940,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "gruntfile.js",
 					"semi_transient": false,
 					"settings":
@@ -897,7 +969,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
