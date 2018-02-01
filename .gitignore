@@ -1,1 +1,4 @@
 node_modules/
+assets/js/libs/autotrack/
+vendor/
+composer.lock

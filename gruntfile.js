@@ -40,17 +40,24 @@ module.exports = function (grunt) {
 				src: 'node_modules/webfontloader/webfontloader.js',
 				dest: 'assets/js/libs/webfontloader.js',
 			},
+			autotrack: {
+				expand: true,
+				cwd: 'node_modules/autotrack/',
+				src: ['**'],
+				dest: 'assets/js/libs/autotrack/',
+			},
 		},
 
 		sass: {
-			dist: {
-				
-				options: {
+
+			options: {
 				sourceMap: false,
-				},
+			},
+			
+			dist: {
 
 				files: {
-				'assets/css/style.css': 'assets/sass/compile.scss'
+					'assets/css/style.css': 'assets/sass/compile.scss'
 				}
 			}
 		},
@@ -62,12 +69,12 @@ module.exports = function (grunt) {
 			dist: {
 				src: [
 					'node_modules/jquery/dist/jquery.js',
-					'node_modules/gsap/TweenMax.js',
-					'node_modules/waypoints/lib/jquery.waypoints.js',
-					'node_modules/jquery-match-height/jquery.matchHeight.js',
-					'node_modules/js-cookie/src/js.cookie.js',
-					'node_modules/history.js/history.js',
-					'node_modules/resize-end/src/resize-end.js'
+					//'node_modules/gsap/TweenMax.js',
+					//'node_modules/waypoints/lib/jquery.waypoints.js',
+					//'node_modules/jquery-match-height/jquery.matchHeight.js',
+					//'node_modules/js-cookie/src/js.cookie.js',
+					//'node_modules/history.js/history.js',
+					//'node_modules/resize-end/src/resize-end.js'
 				],
 				dest:'assets/js/plugins.js',
 			}
@@ -142,6 +149,6 @@ module.exports = function (grunt) {
 	grunt.registerTask('slimcss', ['sass', 'notify:buildcss']);
 
 	grunt.registerTask('buildjs', ['concat', 'uglify']);
-	grunt.registerTask('slimjs', ['uglify', 'notify:buildjs']);
+	grunt.registerTask('slimjs', ['concat', 'notify:buildjs']);
 
 };

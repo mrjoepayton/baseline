@@ -4,23 +4,37 @@ include($_SERVER['DOCUMENT_ROOT'].'/inc/global.php');
 
 $pageTitle = "this is the page title";
 $pageDescription = "This is where you would type your page description";
-$currentURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$pageImage = "http://address.to/yourImageUrl.jpg";
+$currentURL = $baseURL."$_SERVER[REQUEST_URI]";
+$pageImage = $baseURL."/yourImageUrl.jpg";
 
 $bodyID = "homepage";
-$bodyClass = "home";
+$bodyClass = "";
 
 ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/head.php'); ?>
-<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/header.php'); ?>
+<?php include($baseDIR.'/inc/head.php'); ?>
 
-<section class="main-content">
+<div id="content-wrap">
 
-	<div class="container">
-		<h2>content</h2>
+	<?php include($baseDIR.'/inc/header.php'); ?>
+
+	<div id="main-content">
+
+		<div class="container">
+			<div class="row">
+				
+				<div class="col">
+					<h2>Content Title</h2>
+					<p>This is the content.</p>
+				</div>
+
+			</div>
+		</div>
+
 	</div>
 
-</section>
+	<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
+</div>
+
+<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/foot-scripts.php'); ?>
