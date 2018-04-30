@@ -36,15 +36,13 @@ module.exports = function (grunt) {
 		},
 		
 		copy: {
-			main: {
+			webfontloader: {
 				src: 'node_modules/webfontloader/webfontloader.js',
 				dest: 'assets/js/libs/webfontloader.js',
 			},
-			autotrack: {
-				expand: true,
-				cwd: 'node_modules/autotrack/',
-				src: ['**'],
-				dest: 'assets/js/libs/autotrack/',
+			jquery: {
+				src: 'node_modules/jquery/dist/jquery.min.js',
+				dest: 'assets/js/libs/jquery.min.js',
 			},
 		},
 
@@ -68,13 +66,11 @@ module.exports = function (grunt) {
 			},
 			dist: {
 				src: [
-					'node_modules/jquery/dist/jquery.js',
-					//'node_modules/gsap/TweenMax.js',
-					//'node_modules/waypoints/lib/jquery.waypoints.js',
-					//'node_modules/jquery-match-height/jquery.matchHeight.js',
-					//'node_modules/js-cookie/src/js.cookie.js',
-					//'node_modules/history.js/history.js',
-					//'node_modules/resize-end/src/resize-end.js'
+					'node_modules/jquery-match-height/jquery.matchHeight.js',
+					'node_modules/js-cookie/src/js.cookie.js',
+					'node_modules/history.js/history.js',
+					'node_modules/resize-end/src/resize-end.js',
+					'node_modules/gsap/TweenMax.js'
 				],
 				dest:'assets/js/plugins.js',
 			}
@@ -107,11 +103,11 @@ module.exports = function (grunt) {
 		watch: {
 			sass: {
 				files: ['assets/**/*.scss'],
-				tasks: ['slimcss'],
+				tasks: ['buildcss'],
 			},
 			js: {
 				files: ['assets/**/*.js', '!assets/**/*.min.js'],
-				tasks: [ 'slimjs'],
+				tasks: [ 'buildjs'],
 			}
 			
 		},
@@ -133,22 +129,18 @@ module.exports = function (grunt) {
 	});
 
 	// Load tasks
-	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks("grunt-modernizr");
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-uglify-es');
 	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks("grunt-modernizr");
 	grunt.loadNpmTasks('grunt-notify');
+	grunt.loadNpmTasks('grunt-sass');
 
 	// Register tasks
-	grunt.registerTask('default', ['copy', 'modernizr', 'buildcss', 'buildjs']);
-
-	grunt.registerTask('buildcss', ['sass', 'cssmin']);
-	grunt.registerTask('slimcss', ['sass', 'notify:buildcss']);
-
-	grunt.registerTask('buildjs', ['concat', 'uglify']);
-	grunt.registerTask('slimjs', ['concat', 'notify:buildjs']);
+	grunt.registerTask('default', ['modernizr', 'copy', 'buildcss', 'buildjs']);
+	grunt.registerTask('buildcss', ['sass', 'cssmin','notify:buildcss']);
+	grunt.registerTask('buildjs', ['concat', 'uglify', 'notify:buildjs']);
 
 };

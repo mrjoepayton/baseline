@@ -1,22 +1,22 @@
 <?php
 	
-include($_SERVER['DOCUMENT_ROOT'].'/inc/global.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/inc/global.php');
 
 $pageTitle = "this is the page title";
 $pageDescription = "This is where you would type your page description";
-$currentURL = $baseURL."$_SERVER[REQUEST_URI]";
-$pageImage = $baseURL."/yourImageUrl.jpg";
+$currentURL = $baseURL . "$_SERVER[REQUEST_URI]";
+$pageImage = $baseURL . "/yourImageUrl.jpg";
 
-$bodyID = "homepage";
+$bodyID = "home";
 $bodyClass = "";
+
+require($baseDIR . '/inc/head.php');
 
 ?>
 
-<?php include($baseDIR.'/inc/head.php'); ?>
-
 <div id="content-wrap">
 
-	<?php include($baseDIR.'/inc/header.php'); ?>
+	<?php include($baseDIR . '/inc/header.php'); ?>
 
 	<div id="main-content">
 
@@ -33,8 +33,8 @@ $bodyClass = "";
 
 	</div>
 
-	<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/footer.php'); ?>
+	<?php require($_SERVER['DOCUMENT_ROOT'] . '/inc/footer.php'); ?>
 
 </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'].'/inc/foot-scripts.php'); ?>
+<?php require($_SERVER['DOCUMENT_ROOT'] . '/inc/foot-scripts.php'); ?>
